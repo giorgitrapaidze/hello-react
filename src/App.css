@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+  padding: 30px 40px 0px 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2535;
+  padding: 15px 80px;
+}
+
+.main {
+  background-color: #1f2535;
+  height: 60vh;
+  display: flex;
+  padding: 80px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+}
+
+.main h1 {
+  margin-top: 75px;
+  font-size: 74px;
+  margin-bottom: 5px;
+}
+#content1,
+#content2,
+#content3 {
+  padding-left: 2px;
+  color: white;
+}
+
+.btn {
+  margin-top: 80px;
+  background-color: white;
+  padding: 17px 35px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #1f2535;
+  font-weight: 700;
+}
+
+.features {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.featureCard {
+  display: flex;
+  width: 180px;
+  height: 300px;
+  flex-direction: column;
+}
+
+.featureCard h1 {
+  font-size: 28px;
+  width: 300px;
+  margin: 15px 0px 0px 0px;
+}
+
+.featureCard img {
+  width: 140px;
+  justify-self: left;
+}
+
+.featureCard p {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 0;
+  }
+  .main {
+    justify-content: center;
+    align-items: center;
+  }
+  .main h1 {
+    margin-top: 0px;
+    font-size: 38px;
+  }
+  .features {
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .featureCard {
+    padding: 10px;
+  }
+}
